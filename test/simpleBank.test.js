@@ -78,10 +78,10 @@ contract("SimpleBank", function (accounts) {
 
     console.log('######################################################');
     console.log(result.logs[0].args.accountAddress);
-    console.log(result.logs[0].args.depositAmount);
+    console.log(result.logs[0].args.amount);
 
     const logAccountAddress = result.logs[0].args.accountAddress;
-    const logDepositAmount = result.logs[0].args.depositAmount.toNumber();
+    const logDepositAmount = result.logs[0].args.amount.toNumber();
 
 
     assert.equal(
